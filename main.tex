@@ -41,6 +41,15 @@ To use a GitHub workflow you have to setup a .yml file and configure it your des
 \end{enumerate}
 My configuration compiles my \LaTeX{} document whenever I push something with the tag *.*.* (Where * is any sequence of characters).
 
+\newpage
+
+\section{Exploration Tasks}
+\subsection{Discovering Vim's Advanced Features}
+\begin{enumerate}
+    \item \textbf{Marks:} Marks in Vim allow you to quickly jump to specific locations within a file. the `m' key is used to mark the cursor's position, followed by a letter to name it. for example `ma' marks the current spot. then by pressing `a' you can easily jump to it. a mark can be deleted by ``:delmarks a'' or ``:delmarks!'' which deletes all marks.
+    \item \textbf{Folding:} In every IDE you can fold a piece of code to focus your attention on something specific. This feature is available in vim. To manually create a fold, you can use visual mode to select text and then type `zf'. `zo' opens a fold, `zc' closes one, `zM' closes all folds and 'zR' opens all of them.
+    \item \textbf{Persistent Undo and Redo:} By using ``:undofile'' you can browse your undo history and navigate through it. Also by adding ``set undofile'' to your .vimrc file your can undo and redo even after closing your file. Because it makes them persistent. 
+\end{enumerate}
 
 
 \end{document}
