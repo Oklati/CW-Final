@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{graphicx} % Required for inserting images
 \usepackage{fancyhdr}
+\usepackage{hyperref}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -15,6 +16,19 @@
     \maketitle
 \end{titlepage}
 \tableofcontents
+\newpage
+
+\section{Git and GitHub}
+\subsection{Repository Initialization and Commits}
+\begin{enumerate}
+    \item First I created a new repository by clicking the new button on the GitHub homepage.
+    \item Then created a new local repository with git on my computer by entering ``git init'' in terminal.
+    \item Created a basic ``READEME.md'' and pushed it on GitHub.
+    \item Cloned ``\href{https://github.com/MiliAxe/CW1402Final}{https://github.com/MiliAxe/CW1402Final}'' to use it's workflow. copied ``.github'' folder and all of it's components in my project directory. Then added it to git by using this command ``git add .github'' and pushed to GitHub again.
+    \item Created a basic \LaTeX{} file called \emph{main.tex}, added to git like before the pushed again. This time I created a new tag ``v.0.0.0'' and assigned it to the lastest commit by using this command ``git tag -a v0.0.0 \verb|<|HASHOFCOMMIT\verb|>|''.
+    \item Now the repository is set. Every time I finish a subsection, I commit and push it with a new tag, then GitHub automatically complies this document.
+\end{enumerate}
+
 
 
 \end{document}
