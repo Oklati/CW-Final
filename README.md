@@ -12,20 +12,23 @@ This is my submission for the final assignment of computer workshop's course.
    * Handling Issues
 ***
 THIS SOME DUMMY TEXT JUST TO DEMONSTRATE HOW TO USE MARKDOWN SYNTAX.
-# D
-## DD
 ### DDD
 #### DDDD
+##### DDDDD
 **BOLD** move
 *SNEAKY* move
 > NO MAN's LAND
 >> INVENTION OF TUBERCULOSIS
 >>> * NOT THAT SOON
 >>> * IS THAT MY SON?
+
+
 1. first
 2. second
-    1.indented first
-    2.indented second
+    1.
+     indented first
+    2.
+     indented second
 
 
 + another one
