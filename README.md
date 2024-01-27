@@ -24,14 +24,15 @@ THIS SOME DUMMY TEXT JUST TO DEMONSTRATE HOW TO USE MARKDOWN SYNTAX.
 >>> * IS THAT MY SON?
 1. first
 2. second
-  1.indented first
-  2.indented second
+    1.indented first
+        2.indented second
 + another one
-  + another one
-    + and another one
+    + another one
+        + and another one
 - massage
-  - indented massage
-  - intended massage?!
-  - [was that intentional?](https://ryanstutorials.net/linuxtutorial/ "Yes it was!").
+    - indented massage
+        - intended massage?!
+            - [was that intentional?](https://ryanstutorials.net/linuxtutorial/ "Yes it was!").
+
 succumb to your demise!
 ***
