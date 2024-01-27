@@ -51,6 +51,20 @@ My configuration compiles my \LaTeX{} document whenever I push something with th
     \item \textbf{Persistent Undo and Redo:} By using ``:undofile'' you can browse your undo history and navigate through it. Also by adding ``set undofile'' to your .vimrc file your can undo and redo even after closing your file. Because it makes them persistent. 
 \end{enumerate}
 
+\subsection{Memory profiling}
+\subsubsection{Memory Leak}
+Memory leaks happen when you dynamically allocate memory and do not free it when you are done using it. (As simple as that!) The problem is after your function is finished executing, you do not have any access to that chunk and therefore cannot free it. This can cause reduced performance of you program. tools like \emph{Valgrind} can help detecting and debugging this kind of issue. 
+
+\subsubsection{Memory profilers}
+Valgrind is a programming tool for memory debugging, memory leak detection, and profiling. Valgrind actively monitors memory allocation and deallocation during the program's execution. If it detects memory leaks (blocks of memory that are not freed), it reports the details, including the file and line number where the memory was allocated. It can also be used for general program profiling, function call frequencies, and execution time of different code sections.
+
+
+
+
+
+
+
+
 
 \end{document}
 
