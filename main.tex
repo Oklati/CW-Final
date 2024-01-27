@@ -58,12 +58,21 @@ Memory leaks happen when you dynamically allocate memory and do not free it when
 \subsubsection{Memory profilers}
 Valgrind is a programming tool for memory debugging, memory leak detection, and profiling. Valgrind actively monitors memory allocation and deallocation during the program's execution. If it detects memory leaks (blocks of memory that are not freed), it reports the details, including the file and line number where the memory was allocated. It can also be used for general program profiling, function call frequencies, and execution time of different code sections.
 
+\subsection{GNU/Linux Bash Scripting}
+\subsubsection{fzf}
+\begin{itemize}
+    \item Fuzzy searching is a technique used in text matching, where the goal is to find approximate matches for a given search query rather than requiring an exact match. When fuzzy searching a string S, it compares to all other strings and gives each one a degree of similarity. Two popular string metrics are Levenshtein distance and Jaro-Winkler distance. fzf is a handy CLI tool to fuzzy search on your Unix machine.
+    \item This command uses `ls' to list files and directories. Then pipes the result to `fzf', so the user can interactively search the result.
+\end{itemize}
 
+\subsubsection{Using fzf to find your favorite PDF}
+\begin{enumerate}
+    \item I prefer to use the find command, because I think it's more general and fd is only a user-friendlier version of it. Anyway the command to find all the directories of files with pdf extension is ``find / -type f -iname "*.PDF"''.
+    \item Use this command to interactively select your pdf and open it, with your default pdf viewer``interactively''.
+\end{enumerate}
 
-
-
-
-
+\subsubsection{Opening the file using Zathura}
+Zathura's handy syntax let us execute the following command: \newline``zathura \$(find / -type f -iname "*.PDF")''.
 
 
 \end{document}
